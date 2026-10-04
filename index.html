@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edinburgh Pac-Man</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- This is where the map will appear -->
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Your Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- Inventory Sidebar -->
+    <div id="inventory-panel">
+    <h3>Collected Monuments</h3>
+    <ul id="inventory-list">
+        <!-- Names will appear here -->
+    </ul>
+    </div>
+
+    <!-- Start Screen Overlay -->
+    <div id="start-screen">
+    <h1>Welcome to Edinburgh New Town!</h1>
+    <p>Edinburgh has a rich history, but sometimes the buses have a mind of their own! See if you can collect all of the historic monuments without being run over.</p>
+    <p>You are the red dot. Use the arrow keys to move around. Zoom in and out of the map as you like.</p>
+    <h2>Press Enter/Return to Begin</h2>
+
+    <!-- Added Attribution -->
+    <hr style="border: 0.5px solid #555; margin: 20px 0;">
+    <p style="font-size: 12px; color: #ccc;">
+        Game data © <a href="https://www.openstreetmap.org/copyright" target="_blank" style="color: #ccc;">OpenStreetMap contributors</a>.
+    </p>
+    </div>
+
+    <!-- Win Screen Overlay -->
+    <div id="win-screen">
+    <h1>Congratulations!</h1>
+    <p>You have devoid Edinburgh of history. Now put them back won't you.</p>
+    <h2>Press Enter/Return to Play Again</h2>
+    </div>
+
+    <!-- Game Over Overlay (Existing) -->
+    <div id="game-over">
+    <h1>GAME OVER</h1>
+    <p>Try Again</p>
+    </div>
+</body>
+</html>

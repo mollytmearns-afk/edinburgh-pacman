@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 100vh; /* 100% of the viewport height */
+    width: 100%;
+}
+
+#start-screen {
+    display: block; /* Visible by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+}
+
+#game-over {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+#inventory-panel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #333;
+    z-index: 900; /* Below start/game over screens (1000) but above map */
+    font-family: Arial, sans-serif;
+    max-height: 80vh;
+    overflow-y: auto; /* Scroll if list gets too long */
+}
+
+#inventory-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+#inventory-list li {
+    background-color: #ffd700; /* Gold color for collected items */
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #333;
+}
+
+#win-screen {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 100, 0, 0.9); /* Green tint for success */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+}
+
